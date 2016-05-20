@@ -1,0 +1,42 @@
+﻿@using SimpleBlog.Data
+@using SimpleBlog.Models
+@model SimpleBlog.Models.IndexViewModel
+<div class="row">
+
+    <div class="col-md-8">
+        @foreach (PostWithCommentCount post in Model.Posts)
+        {
+            <h2>
+                <a href="/home/post?postid=@post.Post.Id">@post.Post.Title</a>
+            </h2>
+            <p class="lead">
+                by <a href="#">LIT Wiz</a>
+            </p>
+            <p>
+                <span class="glyphicon glyphicon-time"></span> Posted on @post.Post.Date
+            </p>
+            <hr>
+            <p>@(post.Post.Content.Length <= 400 ? post.Post.Content : post.Post.Content.Substring(0, 400))</p>
+            <a class="btn btn-primary" href="/home/post?postid=@post.Post.Id">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <h4>@post.CommentCount comment(s)</h4>
+            <hr>
+        }
+
+        <!-- Pager -->
+        <ul class="pager">
+            @if (Model.ShouldDisplayOlderButton())
+            {
+                <li class="previous">
+                    <a href="/home/index?page=@(Model.CurrentPage + 1)"> &larr; Older</a>
+                </li>
+            }
+            @if (Model.CurrentPage != 1)
+            {
+                <li class="next">
+                    <a href="/home/index?page=@(Model.CurrentPage - 1)">Newer &rarr;</a>
+                </li>
+            }
+        </ul>
+        <hr />
+    </div>
+</div>

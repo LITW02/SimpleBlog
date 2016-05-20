@@ -1,0 +1,5 @@
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog.Data\bin\Debug\SimpleBlog.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog.Data\bin\Debug\SimpleBlog.Data.pdb
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog.Data\obj\Debug\SimpleBlog.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog.Data\obj\Debug\SimpleBlog.Data.pdb
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog.Data\obj\Debug\SimpleBlog.Data.csprojResolveAssemblyReference.cache
